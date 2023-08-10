@@ -34,6 +34,7 @@
   <div class="field">
     <%= f.label :current_password %> <i>(ユーザー情報を変更するために、現在のパスワードが必要です)</i><br />
     <%= f.password_field :current_password, autocomplete: "current-password" %>
+    <span class="fa-regular fa-eye-slash" id="toggle-password-icon" ></span>
   </div>
 
   <div class="field">
