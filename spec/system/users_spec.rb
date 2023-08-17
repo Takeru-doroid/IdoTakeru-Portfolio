@@ -16,7 +16,7 @@ RSpec.describe User, type: :system do
       end
 
       it "新規登録画面に遷移できること" do
-        click_on "新規登録" 
+        click_on "新規登録"
         expect(current_path).to eq new_user_registration_path
       end
 
@@ -53,9 +53,9 @@ RSpec.describe User, type: :system do
 
       it "アイコンのクリックでパスワードの表示/非表示が切り替えれること" do
         visit new_user_registration_path
-        expect(page).to  have_selector "input[type='password']"
+        expect(page).to have_selector "input[type='password']"
         find("#toggle-password-icon").click
-        expect(page).to  have_selector "input[type='text']"
+        expect(page).to have_selector "input[type='text']"
       end
 
       it "ログインできること" do
@@ -85,9 +85,9 @@ RSpec.describe User, type: :system do
 
       it "アイコンのクリックでパスワードの表示/非表示が切り替えれること" do
         visit edit_user_registration_path
-        expect(page).to  have_selector "input[type='password']"
+        expect(page).to have_selector "input[type='password']"
         find("#toggle-password-icon").click
-        expect(page).to  have_selector "input[type='text']"
+        expect(page).to have_selector "input[type='text']"
       end
 
       it "ユーザー編集ができること" do

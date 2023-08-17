@@ -66,7 +66,7 @@ RSpec.describe User, type: :model do
       it "passwordが存在しても、確認用パスワードが空であれば登録できないこと" do
         user.password_confirmation = ""
         user.valid?
-        expect(user.errors.full_messages).to include "パスワード（確認用）とパスワードの入力が一致しません"
+        expect(user.errors.full_messages).to include "パスワード(確認用)とパスワードの入力が一致しません"
       end
     end
   end
