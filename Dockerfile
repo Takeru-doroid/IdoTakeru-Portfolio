@@ -1,5 +1,6 @@
 FROM ruby:3.1
 
+RUN apt-get update && apt-get install -y libvips42
 RUN mkdir /IdoTakeru-Portfolio
 WORKDIR /IdoTakeru-Portfolio
 COPY Gemfile /IdoTakeru-Portfolio/Gemfile
